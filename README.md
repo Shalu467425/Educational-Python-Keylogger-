@@ -53,13 +53,13 @@ Built as the final project for Harvard's CS50P course, this application demonstr
 
 ## 📁 Project Structure
 project/
-├── project.py # Main application file with GUI and CLI interfaces
-├── test_project.py # Comprehensive test suite using pytest
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation (this file)
-├── finances.csv # Data storage file (auto-generated)
-├── expense_chart_*.png # Generated chart images (auto-generated)
-└── test_finances.csv # Test data file (auto-generated during testing)
+├── project.py # Main application file with GUI and CLI interfaces \
+├── test_project.py # Comprehensive test suite using pytest \
+├── requirements.txt # Python dependencies \
+├── README.md # Project documentation (this file) \
+├── finances.csv # Data storage file (auto-generated) \
+├── expense_chart_*.png # Generated chart images (auto-generated) \
+└── test_finances.csv # Test data file (auto-generated during testing) \
 
 ## 🚀 Installation & Setup
 
@@ -76,6 +76,6 @@ cd personal-finance-tracker
 '''
 Step 2: Install Dependencies
 
-'''python
+'''bash
 pip install -r requirements.txt
 '''
