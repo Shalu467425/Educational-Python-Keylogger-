@@ -123,3 +123,40 @@ When you first run the application, sample data will be automatically added to h
    - **Monthly Summary:** Shows income, expenses, balance, and savings rate for each month
    - **Category Breakdown:** Detailed analysis of expenses by category with percentages
    - **Export Options:** Export data to JSON or CSV format for external analysis
+
+**Charts Tab**
+   - **Pie Chart:** Visual representation of expense distribution
+   - **Bar Chart:** Comparison of expenses across categories
+   - **Save Charts:** Export charts as PNG images for reports or presentations
+
+### Using the CLI Mode
+The CLI mode provides all core functionality through a text-based interface:
+1. **Add Transaction:** Guided process for adding new transactions
+2. **View Transactions:** List all transactions with details
+3. **View Balance:** Display current balance
+4.**Generate Reports:** Create expense reports or financial summaries
+5.**Exit:** Close the application
+
+### 🧪 Testing
+The project includes comprehensive test coverage using pytest. All tests are located in test_project.py and cover:
+
+### Test Categories:
+
+1. Transaction Management Tests
+   - Valid transaction addition
+   - Invalid input handling (empty descriptions, negative amounts)
+   - Category and type validation
+2. Financial Calculation Tests
+   - Balance calculation with various transaction combinations
+   - Category summary generation
+   - Monthly summary calculations
+3. Data Persistence Tests
+   - Save and load functionality
+   - Data integrity verification
+   - Export/import operations
+4.Report Generation Tests
+   - Expense report formatting
+   - Date range filtering
+   - Empty data handling
+   
+### Running Tests:
