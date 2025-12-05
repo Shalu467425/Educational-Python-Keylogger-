@@ -94,45 +94,32 @@ Run Tests:
 ```bash
 pytest test_project.py
 ```
-🎯 Usage Guide
-# Starting the Application
+# 🎯 Usage Guide
+### Starting the Application
 When you first run the application, sample data will be automatically added to help you get started. You can delete these sample transactions later.
 
 ### Navigating the GUI
-Dashboard Tab
-Displays current balance with color coding (green for positive, red for negative)
+**Dashboard Tab**
+   - Displays current balance with color coding (green for positive, red for negative)
+   - Shows quick statistics: total income, total expenses, and transaction count
+   - Lists the 10 most recent transactions
+   - Provides an overview of your financial health
 
-Shows quick statistics: total income, total expenses, and transaction count
+**Add Transaction Tab**
+   - **Description:** Enter a brief description of the transaction
+   - **Amount:** Enter the amount (must be positive)
+   - **Type:** Select Income or Expense
+   - **Category:** Choose from 12 predefined categories
+   - **Date:** Enter date in YYYY-MM-DD format or click "Today"
+   - Click "Add Transaction" to save
 
-Lists the 10 most recent transactions
+**View Transactions Tab**
+   - Displays all transactions in a sortable table
+   - Filter by type: All, Income, or Expense
+   - Delete transactions by selecting and clicking "Delete Selected"
+   - View amounts with color coding (green for income, red for expense)
 
-Provides an overview of your financial health
-
-Add Transaction Tab
-Description: Enter a brief description of the transaction
-
-Amount: Enter the amount (must be positive)
-
-Type: Select Income or Expense
-
-Category: Choose from 12 predefined categories
-
-Date: Enter date in YYYY-MM-DD format or click "Today"
-
-Click "Add Transaction" to save
-
-View Transactions Tab
-Displays all transactions in a sortable table
-
-Filter by type: All, Income, or Expense
-
-Delete transactions by selecting and clicking "Delete Selected"
-
-View amounts with color coding (green for income, red for expense)
-
-Reports Tab
-Monthly Summary: Shows income, expenses, balance, and savings rate for each month
-
-Category Breakdown: Detailed analysis of expenses by category with percentages
-
-Export Options: Export data to JSON or CSV format for external analysis
+**Reports Tab**
+   - **Monthly Summary:** Shows income, expenses, balance, and savings rate for each month
+   - **Category Breakdown:** Detailed analysis of expenses by category with percentages
+   - **Export Options:** Export data to JSON or CSV format for external analysis
