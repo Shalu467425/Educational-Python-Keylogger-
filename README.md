@@ -221,152 +221,117 @@ Separate command-line interface that provides:
 **Reason:** Provides flexibility for different user preferences and demonstrates proficiency in both interface types
 **Challenge:** Maintaining feature parity between interfaces while keeping code DRY
 
-2. CSV Data Storage
-Decision: Use CSV format for primary data storage
-Reason: Human-readable, easy to debug, and compatible with spreadsheet software
-Challenge: Implementing proper serialization/deserialization for transaction objects
+### 2. CSV Data Storage
+**Decision:** Use CSV format for primary data storage**
+Reason:** Human-readable, easy to debug, and compatible with spreadsheet software
+**Challenge:** Implementing proper serialization/deserialization for transaction objects
 
-3. Transaction Categorization
-Decision: Predefined categories with "Other" option
-Reason: Standardized categories enable consistent reporting while allowing flexibility
-Challenge: Validating category inputs and handling edge cases
+### 3. Transaction Categorization
+**Decision:** Predefined categories with "Other" option
+**Reason:** Standardized categories enable consistent reporting while allowing flexibility
+**Challenge:** Validating category inputs and handling edge cases
 
-4. Real-time Updates
-Decision: Immediate UI updates after data changes
-Reason: Provides better user experience with instant feedback
-Challenge: Coordinating updates across multiple UI components
+### 4. Real-time Updates
+**Decision:** Immediate UI updates after data changes
+**Reason:** Provides better user experience with instant feedback
+**Challenge:** Coordinating updates across multiple UI components
 
-5. Testing Strategy
-Decision: Comprehensive unit tests with pytest
-Reason: Ensures reliability and makes future development safer
-Challenge: Mocking user input for interactive functions
+### 5. Testing Strategy
+**Decision:** Comprehensive unit tests with pytest
+**Reason:** Ensures reliability and makes future development safer
+**Challenge:** Mocking user input for interactive functions
 
-🎨 User Interface Design
-Color Scheme
-Primary: Blue (#2E86AB) - Main actions and headers
+### 🎨 User Interface Design
+### Color Scheme
+   - **Primary:** Blue (#2E86AB) - Main actions and headers
+   - **Success:** Green - Income and positive amounts
+   - **Danger:** Red - Expenses and negative amounts
+   - **Warning:** Yellow - Warnings and cautions
+   - **Info:** Light Blue - Informational elements
 
-Success: Green - Income and positive amounts
+### Layout Principles
+   - **Consistency:** Uniform styling across all components
+   - **Hierarchy:** Clear visual hierarchy with font sizes and weights
+   - **Feedback:** Immediate visual feedback for user actions
+   - **Accessibility:** High contrast colors and readable fonts
 
-Danger: Red - Expenses and negative amounts
+### Future Enhancements
+####= Planned Features
+   1. **Budget Planning:** Set and track monthly budgets for categories
+   2. **Recurring Transactions:** Automatically add regular transactions
+   3. **Multi-Currency Support:** Handle different currencies and exchange rates
+   4. **Cloud Sync:** Synchronize data across multiple devices
+   5. **Mobile App:** iOS/Android companion application
+   6. **Email Reports:** Scheduled email delivery of financial summaries
+   7. **Investment Tracking:** Track stocks, bonds, and other investments
+   8. **Bill Reminders:** Notifications for upcoming bills
 
-Warning: Yellow - Warnings and cautions
+### Technical Improvements
+   1. **Database Integration:** Replace CSV with SQLite or PostgreSQL
+   2. **REST API:** Web service for remote access
+   3. **Web Interface:** Browser-based access via Flask/Django
+   4. **Data Encryption:** Secure storage of sensitive financial data
+   5. **Automated Backups:** Regular backup to cloud storage
 
-Info: Light Blue - Informational elements
+### Troubleshooting
+### Common Issues & Solutions
+**Issue: "ModuleNotFoundError: No module named 'tkinter'"**
+**Solution:**
+   - **Ubuntu/Debian:** sudo apt-get install python3-tk
+   - **Fedora/RHEL:** sudo dnf install python3-tkinter
+   - **macOS:** brew install python-tk or reinstall Python with Tkinter support
+   - **Windows:** Should be included by default with Python installation
 
-Layout Principles
-Consistency: Uniform styling across all components
+**Issue: Charts not displaying in GUI**
+**Solution:**
 
-Hierarchy: Clear visual hierarchy with font sizes and weights
-
-Feedback: Immediate visual feedback for user actions
-
-Accessibility: High contrast colors and readable fonts
-
-🔄 Future Enhancements
-Planned Features
-Budget Planning: Set and track monthly budgets for categories
-
-Recurring Transactions: Automatically add regular transactions
-
-Multi-Currency Support: Handle different currencies and exchange rates
-
-Cloud Sync: Synchronize data across multiple devices
-
-Mobile App: iOS/Android companion application
-
-Email Reports: Scheduled email delivery of financial summaries
-
-Investment Tracking: Track stocks, bonds, and other investments
-
-Bill Reminders: Notifications for upcoming bills
-
-Technical Improvements
-Database Integration: Replace CSV with SQLite or PostgreSQL
-
-REST API: Web service for remote access
-
-Web Interface: Browser-based access via Flask/Django
-
-Data Encryption: Secure storage of sensitive financial data
-
-Automated Backups: Regular backup to cloud storage
-
-🐛 Troubleshooting
-Common Issues & Solutions
-Issue: "ModuleNotFoundError: No module named 'tkinter'"
-Solution:
-
-Ubuntu/Debian: sudo apt-get install python3-tk
-
-Fedora/RHEL: sudo dnf install python3-tkinter
-
-macOS: brew install python-tk or reinstall Python with Tkinter support
-
-Windows: Should be included by default with Python installation
-
-Issue: Charts not displaying in GUI
-Solution:
-
-bash
+```bash
 pip install --upgrade matplotlib
-Issue: CSV file corruption
-Solution:
+```
 
-Backup your data: Export to JSON from the Reports tab
+**Issue: CSV file corruption** 
+**Solution:**
+   1. Backup your data: Export to JSON from the Reports tab
+   2. Delete the corrupted finances.csv file
+   3. Restart the application (sample data will be added)
+   4. Import your backup from JSON
 
-Delete the corrupted finances.csv file
+**Issue: Slow performance with many transactions**
+**Solution:**
+   - Use filtering to view subsets of transactions
+   - Consider archiving old transactions
+   - The application is optimized for up to 10,000 transactions
 
-Restart the application (sample data will be added)
-
-Import your backup from JSON
-
-Issue: Slow performance with many transactions
-Solution:
-
-Use filtering to view subsets of transactions
-
-Consider archiving old transactions
-
-The application is optimized for up to 10,000 transactions
-
-Debug Mode
+### Debug Mode
 To enable debug output, modify project.py:
 
-python
+```python
 import logging
 logging.basicConfig(level=logging.DEBUG)
-👥 Contributing
+```
+
+### 👥 Contributing
 While this is a CS50P final project, suggestions and improvements are welcome:
+   - Fork the repository
+   - Create a feature branch
+   - Make your changes
+   - Add tests for new functionality
+   - Submit a pull request
 
-Fork the repository
-
-Create a feature branch
-
-Make your changes
-
-Add tests for new functionality
-
-Submit a pull request
-
-📄 License
+### 📄 License
 This project is created for educational purposes as part of the CS50P course. All code is available for learning and reference.
 
-🙏 Acknowledgments
-Harvard University and CS50 for the excellent course curriculum
+### 🙏 Acknowledgments
+   - Harvard University and CS50 for the excellent course curriculum
+   - David J. Malan and the CS50 teaching team
+   - Python Software Foundation for the amazing programming language
+   - Matplotlib and Tkinter communities for documentation and examples
 
-David J. Malan and the CS50 teaching team
-
-Python Software Foundation for the amazing programming language
-
-Matplotlib and Tkinter communities for documentation and examples
-
-📊 Sample Use Cases
-Student Budgeting
-Track part-time job income
-
-Monitor expenses like food, transportation, and entertainment
-
-Generate monthly reports for financial aid applications
+### 📊 Sample Use Cases
+**Student Budgeting**
+   - Track part-time job income
+   - Monitor expenses like food, transportation, and entertainment
+   - Generate monthly reports for financial aid applications
 
 **Family Finance Management**
    - Track household income from multiple sources
