@@ -368,32 +368,23 @@ Monitor expenses like food, transportation, and entertainment
 
 Generate monthly reports for financial aid applications
 
-Family Finance Management
-Track household income from multiple sources
+**Family Finance Management**
+   - Track household income from multiple sources
+   - Categorize expenses for tax preparation
+   - Set and monitor budget goals
+   - Generate year-end financial summaries
 
-Categorize expenses for tax preparation
-
-Set and monitor budget goals
-
-Generate year-end financial summaries
-
-Freelancer/Contractor
-Track project income and business expenses
-
-Categorize expenses for tax deductions
-
-Monitor cash flow and savings rate
-
-Generate client billing reports
+**Freelancer/Contractor**
+   - Track project income and business expenses
+   - Categorize expenses for tax deductions
+   - Monitor cash flow and savings rate
+   - Generate client billing reports
 
 **Personal Financial Planning**
-Monitor spending habits and identify areas for improvement
-
-Track progress toward savings goals
-
-Generate retirementm planning reports
-
-Visualize financial trends over time
+   - Monitor spending habits and identify areas for improvement
+   - Track progress toward savings goals
+   - Generate retirementm planning reports
+   - Visualize financial trends over time
 
 ### 🏆 Learning Outcomes
 This project demonstrates mastery of:
