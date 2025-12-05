@@ -59,7 +59,7 @@ project/
 ├── README.md # Project documentation (this file) \
 ├── finances.csv # Data storage file (auto-generated) \
 ├── expense_chart_*.png # Generated chart images (auto-generated) \
-└── test_finances.csv # Test data file (auto-generated during testing) \
+└── test_finances.csv # Test data file (auto-generated during testing) 
 
 ## 🚀 Installation & Setup
 
@@ -70,12 +70,24 @@ project/
 ### Step 1: Clone or Download the Project
 # Clone the repository or download the project files
 
-'''bash
+```bash
 git clone [repository-url]
 cd personal-finance-tracker
-'''
+```
 Step 2: Install Dependencies
 
-'''bash
+```bash
 pip install -r requirements.txt
-'''
+```
+Step 3: Run the Application
+
+GUI Mode (Recommended):
+
+```bash
+python project.py
+```
+CLI Mode:
+
+```bash
+python project.py --cli
+```
